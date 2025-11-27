@@ -1,10 +1,10 @@
 const defaults = { tema: "claro", idioma: "es" };
 
 function configurarUsuario(defaults, personalizadas) {
-  // Combine defaults and personalizadas without mutating either using spread
+  // combinar defaults con personalizadas usando el operador de propagación sin modificar defaults
   const configuracionCombinada = { ...defaults, ...personalizadas };
 
-  // Return the combined configuration object (both tema and idioma)
+  // Retornar la configuración combinada (defaults sobrescrito por personalizadas)
   return configuracionCombinada;
 }
 
